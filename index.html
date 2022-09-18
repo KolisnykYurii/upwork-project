@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>YPRED</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220918210221">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="body-box">
+	<div class="wrapper">
+
+		<header class="header">
+			<form action="#" class="header__form form">
+				<input class="form__input" autocomplete="off" type="text" placeholder="Search here...">
+				<button type="submit" class="form__button">
+					<svg fill="#fff" width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+						<path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z" />
+					</svg>
+				</button>
+			</form>
+			<div class="header__purse purse">
+				<div class="purse__item">
+					<picture><source srcset="img/purse/01.webp" type="image/webp"><img class="purse__img" src="img/purse/01.png" alt="currency"></picture>
+					<div class="purse__box">
+						<p class="purse__money">168,331.09</p>
+						<p class="purse__text">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="19" viewBox="0 0 23 19">
+								<image width="23" height="19" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAASCAYAAABfJS4tAAAC60lEQVQ4jaWUTU8TURSG32mntJ3Sln5QKBRTRAOSqtFEjMACWGgUQwQTwsqFC3f+Cv+AceHeyMJE2YgaFmIihJgQrARRQAVKLFRTCm3t57SdMYeckrEhJMJJbnIyc+9zz33fc68QeD2MY4ROMygUHqp4DKgegBFAFQADf8sDKACQjwqmCk0A7ABsACQAJQBJAAnKjwIuQx0AGgHUB2pPDWaUrHsttvkAQBFAVncIQNDoJ2igBq6SoK0BZ8utj6kvQ16TuwlADUsjHATW8U8zgGqGWDm3AHACIEhbi9XXu5RfH/RLjdaumvNUKSmggpODoBbWz8oGkdMyV07gkx6T43JCl7qpQLUPuHtiT9fejAPIsIFFsQJqZKCXqvJZ6tpVKK7NdDTCC8Bgv6Pa1h/MLLvvN41gIjwzHslurwKIAUhrzStXSsf2AWivN7u6/+jS/TulhPOs+3Qyk8uuh1KR+I2GruYdJVn7NjHrGPL0wi5YQrtycgXABoBtMq7cxwJLYmVDzvgkT0/WkBuW1YLU6TgnzMQXTHronG1uf1406aUPvxeEi7ZW+A3e8KOVZ6MlVfkMIMztRn2siJr2cdERfZKnQzGqtyP5mOVOQz867AH0uTowGZsVPyVXxLmtrzhh9uJazZX042/PX5RUZRFACMAOgBz7AS3Y4aiyNuuMwkBI3rLdbRyABdL2cjIEVVXVbtuFqj7nJfv73SDq9a5oXE4tlVRlHsAPAFE2rlQ2TNSYZnZa7f3B9HLTPd8gZLm4OLoxNsc3qSiJJum6t7PthL6u+DI8NZUt5Qn4vUICVQsGfyikimnjiPdqzqQYp59svJoE8IudLmSKOXHs57sJvllJPjqZleJWVDUdtt/QpE2sVnA+TKTSddO78xFeFGVIkU+m5/kyryk/OkrlLRNZlz3wYnw1yLLQZOpHqobah+aUrzjF3tN4ELCyYtqZFpMBBKCcqqSxb0hFfmgQuPw4E6T82NBm/2j2XwHgL4dSFve19qVQAAAAAElFTkSuQmCC" />
+							</svg>
+							<span class="purse__interest">
+								45%
+							</span>
+							this week
+						</p>
+					</div>
+				</div>
+				<div class="purse__item">
+					<picture><source srcset="img/purse/02.webp" type="image/webp"><img class="purse__img" src="img/purse/02.png" alt="currency"></picture>
+					<div class="purse__box">
+						<p class="purse__money">168,331.09</p>
+						<p class="purse__text">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="19" viewBox="0 0 23 19">
+								<image width="23" height="19" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAASCAYAAABfJS4tAAAC60lEQVQ4jaWUTU8TURSG32mntJ3Sln5QKBRTRAOSqtFEjMACWGgUQwQTwsqFC3f+Cv+AceHeyMJE2YgaFmIihJgQrARRQAVKLFRTCm3t57SdMYeckrEhJMJJbnIyc+9zz33fc68QeD2MY4ROMygUHqp4DKgegBFAFQADf8sDKACQjwqmCk0A7ABsACQAJQBJAAnKjwIuQx0AGgHUB2pPDWaUrHsttvkAQBFAVncIQNDoJ2igBq6SoK0BZ8utj6kvQ16TuwlADUsjHATW8U8zgGqGWDm3AHACIEhbi9XXu5RfH/RLjdaumvNUKSmggpODoBbWz8oGkdMyV07gkx6T43JCl7qpQLUPuHtiT9fejAPIsIFFsQJqZKCXqvJZ6tpVKK7NdDTCC8Bgv6Pa1h/MLLvvN41gIjwzHslurwKIAUhrzStXSsf2AWivN7u6/+jS/TulhPOs+3Qyk8uuh1KR+I2GruYdJVn7NjHrGPL0wi5YQrtycgXABoBtMq7cxwJLYmVDzvgkT0/WkBuW1YLU6TgnzMQXTHronG1uf1406aUPvxeEi7ZW+A3e8KOVZ6MlVfkMIMztRn2siJr2cdERfZKnQzGqtyP5mOVOQz867AH0uTowGZsVPyVXxLmtrzhh9uJazZX042/PX5RUZRFACMAOgBz7AS3Y4aiyNuuMwkBI3rLdbRyABdL2cjIEVVXVbtuFqj7nJfv73SDq9a5oXE4tlVRlHsAPAFE2rlQ2TNSYZnZa7f3B9HLTPd8gZLm4OLoxNsc3qSiJJum6t7PthL6u+DI8NZUt5Qn4vUICVQsGfyikimnjiPdqzqQYp59svJoE8IudLmSKOXHs57sJvllJPjqZleJWVDUdtt/QpE2sVnA+TKTSddO78xFeFGVIkU+m5/kyryk/OkrlLRNZlz3wYnw1yLLQZOpHqobah+aUrzjF3tN4ELCyYtqZFpMBBKCcqqSxb0hFfmgQuPw4E6T82NBm/2j2XwHgL4dSFve19qVQAAAAAElFTkSuQmCC" />
+							</svg>
+							<span class="purse__interest">
+								45%
+							</span>
+							this week
+						</p>
+					</div>
+				</div>
+				<div class="purse__item">
+					<picture><source srcset="img/purse/03.webp" type="image/webp"><img class="purse__img" src="img/purse/03.png" alt="currency"></picture>
+					<div class="purse__box">
+						<p class="purse__money">168,331.09</p>
+						<p class="purse__text">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="19" viewBox="0 0 23 19">
+								<image width="23" height="19" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAASCAYAAABfJS4tAAAC60lEQVQ4jaWUTU8TURSG32mntJ3Sln5QKBRTRAOSqtFEjMACWGgUQwQTwsqFC3f+Cv+AceHeyMJE2YgaFmIihJgQrARRQAVKLFRTCm3t57SdMYeckrEhJMJJbnIyc+9zz33fc68QeD2MY4ROMygUHqp4DKgegBFAFQADf8sDKACQjwqmCk0A7ABsACQAJQBJAAnKjwIuQx0AGgHUB2pPDWaUrHsttvkAQBFAVncIQNDoJ2igBq6SoK0BZ8utj6kvQ16TuwlADUsjHATW8U8zgGqGWDm3AHACIEhbi9XXu5RfH/RLjdaumvNUKSmggpODoBbWz8oGkdMyV07gkx6T43JCl7qpQLUPuHtiT9fejAPIsIFFsQJqZKCXqvJZ6tpVKK7NdDTCC8Bgv6Pa1h/MLLvvN41gIjwzHslurwKIAUhrzStXSsf2AWivN7u6/+jS/TulhPOs+3Qyk8uuh1KR+I2GruYdJVn7NjHrGPL0wi5YQrtycgXABoBtMq7cxwJLYmVDzvgkT0/WkBuW1YLU6TgnzMQXTHronG1uf1406aUPvxeEi7ZW+A3e8KOVZ6MlVfkMIMztRn2siJr2cdERfZKnQzGqtyP5mOVOQz867AH0uTowGZsVPyVXxLmtrzhh9uJazZX042/PX5RUZRFACMAOgBz7AS3Y4aiyNuuMwkBI3rLdbRyABdL2cjIEVVXVbtuFqj7nJfv73SDq9a5oXE4tlVRlHsAPAFE2rlQ2TNSYZnZa7f3B9HLTPd8gZLm4OLoxNsc3qSiJJum6t7PthL6u+DI8NZUt5Qn4vUICVQsGfyikimnjiPdqzqQYp59svJoE8IudLmSKOXHs57sJvllJPjqZleJWVDUdtt/QpE2sVnA+TKTSddO78xFeFGVIkU+m5/kyryk/OkrlLRNZlz3wYnw1yLLQZOpHqobah+aUrzjF3tN4ELCyYtqZFpMBBKCcqqSxb0hFfmgQuPw4E6T82NBm/2j2XwHgL4dSFve19qVQAAAAAElFTkSuQmCC" />
+							</svg>
+							<span class="purse__interest">
+								45%
+							</span>
+							this week
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<select name="cash" data-class-modif="cash">
+				<option data-class="cash__option" value="cash1" selected>$150,000</option>
+				<option data-class="cash__option" value="cash2">$30,000</option>
+				<option data-class="cash__option" value="cash3">$130,000</option>
+				<option data-class="cash__option" value="cash4">$80,000</option>
+			</select>
+
+			<div class="header__actions actions">
+				<button class="actions__fullscreen">
+					<span>
+						<svg fill="#fff" width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+							<path d="M32 32C14.3 32 0 46.3 0 64v96c0 17.7 14.3 32 32 32s32-14.3 32-32V96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V352zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32h64v64c0 17.7 14.3 32 32 32s32-14.3 32-32V64c0-17.7-14.3-32-32-32H320zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V352z" />
+						</svg>
+					</span>
+				</button>
+				<button class="actions__notification">
+					<span>
+						<svg fill="#fff" width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+							<path d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z" />
+						</svg>
+					</span>
+					<span class="actions__notification-quantity"></span>
+				</button>
+				<button class="actions__chat">
+					<span class="actions__chat-span">
+						<svg fill="#fff" width="30" height="30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60.015 60.015" style="enable-background:new 0 0 60.015 60.015;" xml:space="preserve">
+							<path d="M42.007,0h-24c-9.925,0-18,8.075-18,18v14c0,9.59,7.538,17.452,17,17.973v8.344c0,0.688,0.411,1.304,1.047,1.568c0.211,0.087,0.433,0.13,0.652,0.13c0.44,0,0.873-0.173,1.198-0.498l1.876-1.876C26.708,52.713,33.259,50,40.227,50h1.781c9.925,0,18-8.075,18-18V18C60.007,8.075,51.932,0,42.007,0z M58.007,32c0,8.822-7.178,16-16,16h-1.781c-7.502,0-14.555,2.921-19.86,8.226l-1.359,1.359V49v-1v-4c0-0.552-0.448-1-1-1s-1,0.448-1,1v3.949c-8.356-0.52-15-7.465-15-15.949V18c0-8.822,7.178-16,16-16h24c8.822,0,16,7.178,16,16V32z" />
+							<path d="M17.007,19.015h14c0.552,0,1-0.448,1-1s-0.448-1-1-1h-14c-0.552,0-1,0.448-1,1S16.455,19.015,17.007,19.015z" />
+							<path d="M44.007,25.015h-27c-0.552,0-1,0.448-1,1s0.448,1,1,1h27c0.552,0,1-0.448,1-1S44.56,25.015,44.007,25.015z" />
+							<path d="M44.007,33.015h-27c-0.552,0-1,0.448-1,1s0.448,1,1,1h27c0.552,0,1-0.448,1-1S44.56,33.015,44.007,33.015z" />
+						</svg>
+					</span>
+				</button>
+				<button type="button" class="actions__connect">
+					<svg fill="#fff" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="19" viewBox="0 0 23 19">
+						<image id="wallet_2_" data-name="wallet (2)" width="23" height="19" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAATCAYAAAB7u5a2AAABKElEQVQ4jbWVu0oEQRBFj8s+xD9QUDA2E8HIxNRHYGAmCCKyoD9gqggGRpqJH2Ag+A2CgZEIYqYYKUbiwrq7Bh5pacFgH/a4c6GDGarO3K6q7hlQiZoD1oAZoEI23QNnwAHQIMDVQ/urR3UkOF+KX+u3rgP8FpjIAU6AN4DBPOBF4DNDXtjtJdDsEtMMzawltnIzDkHPVUx0vAscAYtx18NAFXhrE1tPcf4RnU6pW2pZrainnRJS4M8xfkUtqAvqaHzXTrUUeCuCptUNtRSfjzslpNS8DGwDe8AYMB9rPgvctIl/zzItq3+dlnCI6sBQ4tRcARffl1NntQK8+Y9bsKsKwEMeYCJ8Jyf23U/xTxKb2ksv6vjvP9EysA5MAqWMbp+Ac2AfeP0CrvSNId7rIW8AAAAASUVORK5CYII=" />
+					</svg>
+					<span>
+						Connect
+					</span>
+				</button>
+			</div>
+		</header>
+
+		<main class="page">
+			<div class="inner">
+
+				<div data-tabs class="content">
+					<a href="#" class="logo">
+						<svg fill="#fff" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="66" height="61" viewBox="0 0 66 61">
+							<image width="66" height="61" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAAA9CAYAAAAZIL/8AAAKCklEQVRogd1bCXBeVRk92ZvSlbTUEiSxttVKwNhFAlgplEEGUMAqMoNQZa0zik51UMpItSwClWJZxqIDFkQooEhRyiYioBKwbGFpoVJKSyjQhaZtSJckx/nqefXm8Zb7/v/vJL9n5k3e/+5999733fst57s3JSTRR1EG4EQAPwHwcQ2xG8CbAGYB+JN+FwYmiD542QSdRnIFo/EGyWmFHHdfXREfAXA/gMaEOksBnAvg2UJ0WFqIRgAMAVCja3CebZUDOBpAfUq9iQA+nWdfPTrNB5UATgFwtu4NHwD4FYC7AWyPabwawDAAFQDWA9hiWqqySn1gtcfA9spfBP9FvoI4HcDlWgkuGgAMAnBDxDtDAXwXwDR9tC3x8wBsUDklTB9DWDC9zkc16gB8JUII0GwfFzNj9RKECWus6tU65dsAPAbg/ZT+TQgbdW/CHQ9gRK4fk48gmvQxcTCXNymirFwqESA8+/aBzQBeTGjb6iwE8LB+fxvA7RJwZcJ7schHEKbDVQnl9rEDIp6/AuDHANokhEUA1oTqtDuqEoXFAC6WfTGM0ur6KICuXD4mHxuxXB8wLKa8A8B7Ec/tIxcAaNFEvCChuDgYwGf02/p4AsChUqtOCe8Np/48AA9IyDkJItcApB/Ji0luiAl4DG0k/0ByQsa2h5K8W210kDyX5AiSc0nuINlF8qRCB4G5vLQXyTkkN2uw20lucwRgwnnb+b2U5AmebZeRvMBp79ckB6psIsllej6LZPmeFkQpyTEkp5AcT7K/U7YPyatItmtAr5CcQfLLJM/QdTzJo0je7gjDQuJzPAY0juRyvfMeyUOcsmqSD6rsEZJjCykI10aYCzpTnqBObtGM2Srpqen05wGcId1+DsCPADwUo3VmQ94F8C3p9lyFzlfJTlRJ7z+mgGqDrP9o6fkl6iOABWfv6P6zAMYAeC2jJRgI4ACNfwWAdUFBIAizuhcBODXCgB6sv+sUPlsjfwfwAwBPJXT6FoALJIyZMqrGGvfXB07UB42QYW3TIHcCuAPAbxRTBKCMYYe80aBQfyaYYwCsBPCoJjHAPop+Gx0mu1ZueuGuiZbO35hg9MK4R0vYd9lVkDyd5HNOO9sS2t/iqJGRwiapm9mKBpLPqt4cGW2r10jyLrVraniW0/9+JBck9LeQZB1keNoTKoZxM8m9c9DDJgkxDZ2yATWySQ+RXE3yGLWzSO8vlQG1ZxeG2lzsGNlT5WniYMb+3lJR2f4Z9OyrAL6QoX6AZ7S00ziEJWSmAJgsNaxXoDRU5YFeN0ilg2du/NCpa6Ai4KTA0SLRL5o9GJ7xg6qdQYVhduBTAF6OiAzNAE/1jGYpYVsgNQfAJ6XPUNubRP331jPLXVwK4HAAmwHcLFtyQAoN2A0TRIm3CP6HqHfGi0VOEKNcEDKm/WS0fFAqwdmM3hqq/4DI3lTR9TJ5tdkSWJsMIWSo08jbLpQXkMpafnG67htk8V1BdMpt+oCa9R0Rdc2dr9b98VoBRr4el8sO0CB3X+vTYbkGmBU7I+qHCVg4sfKO3O44D/Ww8icdUuVispPC2w/A+QBOA/Azpe1qRcC+5qkWNmG3mVW9heTODF7jabmrsFc4luSTigj/qWgzXGeKOEgaVii6Db8/mOTDMe+uJ/mW8/s1kr8jeSXJa0iuinjnfZKXW/RcLkmOU4CTBovurgPwfES9JdLVJqlES0SdfaXTSbCVc4XS9mEcpkg0CjXq/04x0zudxG6JDO9JTiBmavcIgOt3/RK3OIXkSymzZGTqEvn3XOL5z5F8QW0Zq3xC5KxTrHKNuMTZTqAUvqaTbE0Y42UpYygRWavQfQ+uYX59kSztDFniWsUWnbK8KyXhhaGw1xeNWnkHyRBeC+AXsvwNsjktcoNbEtp8UV5g35jydTHPAzDOJkbtaxyqgKZGvtjU4MGUASbBXOZ8ZbtN6DdJ4LklUICrAXwv4vk/9HxpTq3GLCFbPpVaQqUZln8VyZFKrkAUfq5jjO8gOSxPylxL8lqF2GYQnyd5P8mpoXqDFNYflKBquy/fna6RihpfD7G6AIMUSE1SZGnL9y8KsmbLQD4uCv+65xwNVlBlS/nV0AqqFKWvl+q2AtgaKj9TVN5U/qcA7splRYRnwIjWmyRnkhwQKh9Ccl6EC3aJztMylllW1oUiW5ao+ZJWqO/75t6fcvpfnPZOWoOWOrtCVp2KAU4Mlc9KYXfmq7+TcflPCvn9l5Ut833/E1KXADelveOTxW6Tp6iQwexwyiy2PzYlUqzOuB9aIjI1xHlWk3G/4t8yqtWKS36Z9kKaILrk6mzH6ggA10j3AzQqGEtCldymLyjL36wgr1N7qcsztNGlFOJj8lRRlKAHfI3lAF0bQo3OUDyQtNEDRXoXyWC2errOkUq/tSu/uNlnoEKJmGupIsgoA9/zBU9BxOE4hah1HnVNrZap/hKxy1wIXxLK5E3Mex2pldyq1dGSKMw8fbp5kN8mR+a7DOk65/cH8v3nKFzPEqckXeVKyy2Tgd6pvi2PuVFpwtG5eg2fy1jmyhghWD7wepIHaj9kjeNmN8qtzlSCtUZ/DyN5BMlRCsxKPMdhR43WpkzKn0nW7ylBVIleGz3eqqtdMcBsJ9E7QAK5VAPu1uCsbgvJZv1dLTptM7tE76SNYbQSvmmwPm+IaqOQZ6hqlf8sk7FqVzapI1Svv5KuJyi1NzwlXfiMMl+vxmm39izme7pYS/gcFTagvXmYrFo73ufL6Ca5chv8v+Sx3JilWwZ3qmc+BcqkTw+Ts3yPDuWDDh0JqPJI3R2ii6HVE8xilgR0ecQuWa8KAtruG+2Z4u+KWBHuATRfYWxVXNIDvS2ILs9ET5v2TV8KjZm6GrS/GpfGc7FesUUP9LYgNilkH5ti6CxU/n3MCZyg3Cj591P6W6tw/cO7bQUKZvK5Jojix8FymieL6Sb1YwmhWxPasZzreXHt9PaKgI4I/FBbdqNCZZaDvAzAvQ4/mazznbY6blQ+FUrQvK17yn1v0vVX7ZD9LY7n9AVBBMnjVdqr3F+Uv1UHQR4NcRI7nnyWyFSzIwg7wPp13dsH/1yGsUMcZ2tE37vRFwQRoFlXqYKyOOp8n7zNu3K/cIzlSB1QmSdi542+JIgA3SlHB5oVFO2QxylTOqBJ5bdlFQL6qCB84NLpadodh2zBglz+oaUYBWEB2IH62CrxlRHaIZ8fOojqjWISxBjN/pEyqt06czFM97fIM+SEYhHEcJ3Q+2ZMeZcStlHnKbxQqP/g2ZMwDvENACcn9FEhden3/y6IuP/9cHG4hJETikEQFZ7jrHMOk2ZGsawIH4rdmU9WvBgEsd1zT2OZaHpOKAZBQDvZ4X9uCeO+jLthPVAMgqDOWl7tnJ90sVH/TXhPPp0USxxhun+lkjfGPN0j03/UOQgjW7kBwH8AFrSNSa2ddTgAAAAASUVORK5CYII=" />
+						</svg>
+					</a>
+					<nav data-tabs-titles class="content__menu menu">
+						<button type="button" class="menu__title _tab-active">
+							<img class="menu__title-img" src="img/menu/window.svg" alt="window">
+						</button>
+						<button type="button" class="menu__title">
+							<img class="menu__title-img" src="img/menu/plugin.svg" alt="plugin">
+						</button>
+						<button type="button" class="menu__title">
+							<img class="menu__title-img" src="img/menu/puzzle.svg" alt="puzzle">
+						</button>
+						<button type="button" class="menu__title">
+							<img class="menu__title-img" src="img/menu/diamond.svg" alt="diamond">
+						</button>
+					</nav>
+					<div data-tabs-body class="content__box">
+
+
+						<!--one page-->
+						<div class="content__body body-content">
+							<div class="body-content__wrapper">
+								<div class="body-content__graph">
+									<picture><source srcset="img/graph.webp" type="image/webp"><img class="body-content__img" src="img/graph.jpg" alt="graph"></picture>
+									<div data-tabs class="body-content__tabs">
+										<nav data-tabs-titles class="body-content__navigation">
+											<button type="button" class="body-content__title">Overall</button>
+											<button type="button" class="body-content__title">AI Signals</button>
+											<button type="button" class="body-content__title">Breakout</button>
+											<button type="button" class="body-content__title _tab-active">Patterns</button>
+											<button type="button" class="body-content__title">Technical</button>
+											<button type="button" class="body-content__title">Social Sentiment</button>
+											<button type="button" class="body-content__title">News Sentiment</button>
+
+										</nav>
+										<div data-tabs-body class="body-content__content">
+											<div class="body-content__body">
+												<ul class="body-content__list">
+													<li class="body-content__item">
+														<p class="body-content__item-title">
+															Overall 1
+														</p>
+														<p class="body-content__item-time">
+															1m
+														</p>
+													</li>
+													<li class="body-content__item">
+														<p class="body-content__item-title">
+															Overall 2
+														</p>
+														<p class="body-content__item-time">
+															3m
+														</p>
+													</li>
+													<li class="body-content__item">
+														<p class="body-content__item-title">
+															Overall 3
+														</p>
+														<p class="body-content__item-time">
+															13m
+														</p>
+													</li>
+												</ul>
+											</div>
+											<div class="body-content__body">
+												<ul class="body-content__list">
+													<li class="body-content__item">
+														<p class="body-content__item-title">
+															AI Signals 1
+														</p>
+														<p class="body-content__item-time">
+															1m
+														</p>
+													</li>
+													<li class="body-content__item">
+														<p class="body-content__item-title">
+															AI Signals 2
+														</p>
+														<p class="body-content__item-time">
+															3m
+														</p>
+													</li>
+													<li class="body-content__item">
+														<p class="body-content__item-title">
+															AI Signals 3
+														</p>
+														<p class="body-content__item-time">
+															13m
+														</p>
+													</li>
+												</ul>
+											</div>
+											<div class="body-content__body">
+												<ul class="body-content__list">
+													<li class="body-content__item">
+														<p class="body-content__item-title">
+															Breakout 1
+														</p>
+														<p class="body-content__item-time">
+															1m
+														</p>
+													</li>
+													<li class="body-content__item">
+														<p class="body-content__item-title">
+															Breakout 2
+														</p>
+														<p class="body-content__item-time">
+															3m
+														</p>
+													</li>
+													<li class="body-content__item">
+														<p class="body-content__item-title">
+															Breakout 4
+														</p>
+														<p class="body-content__item-time">
+															10m
+														</p>
+													</li>
+												</ul>
+											</div>
+											<div class="body-content__body">
+												<ul class="body-content__list">
+													<li class="body-content__item">
+														<p class="body-content__item-title">
+															Patterns 1
+														</p>
+														<p class="body-content__item-time">
+															1m
+														</p>
+													</li>
+													<li class="body-content__item">
+														<p class="body-content__item-title">
+															Patterns 2
+														</p>
+														<p class="body-content__item-time">
+															5m
+														</p>
+													</li>
+													<li class="body-content__item">
+														<p class="body-content__item-title">
+															Patterns 3
+														</p>
+														<p class="body-content__item-time">
+															10m
+														</p>
+													</li>
+												</ul>
+											</div>
+											<div class="body-content__body">
+												<ul class="body-content__list">
+													<li class="body-content__item">
+														<p class="body-content__item-title">
+															Technical 1
+														</p>
+														<p class="body-content__item-time">
+															1m
+														</p>
+													</li>
+													<li class="body-content__item">
+														<p class="body-content__item-title">
+															Technical 2
+														</p>
+														<p class="body-content__item-time">
+															3m
+														</p>
+													</li>
+													<li class="body-content__item">
+														<p class="body-content__item-title">
+															Technical 3
+														</p>
+														<p class="body-content__item-time">
+															13m
+														</p>
+													</li>
+												</ul>
+											</div>
+											<div class="body-content__body">
+												<ul class="body-content__list">
+													<li class="body-content__item">
+														<p class="body-content__item-title">
+															Social Sentiment 1
+														</p>
+														<p class="body-content__item-time">
+															1m
+														</p>
+													</li>
+													<li class="body-content__item">
+														<p class="body-content__item-title">
+															Social Sentiment 2
+														</p>
+														<p class="body-content__item-time">
+															3m
+														</p>
+													</li>
+													<li class="body-content__item">
+														<p class="body-content__item-title">
+															Social Sentiment 3
+														</p>
+														<p class="body-content__item-time">
+															13m
+														</p>
+													</li>
+												</ul>
+											</div>
+											<div class="body-content__body">
+												<ul class="body-content__list">
+													<li class="body-content__item">
+														<p class="body-content__item-title">
+															News Sentiment 1
+														</p>
+														<p class="body-content__item-time">
+															1m
+														</p>
+													</li>
+													<li class="body-content__item">
+														<p class="body-content__item-title">
+															News Sentiment 2
+														</p>
+														<p class="body-content__item-time">
+															3m
+														</p>
+													</li>
+													<li class="body-content__item">
+														<p class="body-content__item-title">
+															News Sentiment 3
+														</p>
+														<p class="body-content__item-time">
+															13m
+														</p>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="body-content__info info">
+									<div class="info__inner">
+										<div class="info__top">
+											<form class="info__top-form-left form-left" action="#">
+												<select name="#" data-class-modif="form-left__form">
+													<option data-class="form-left__option" value="1" selected>ETH</option>
+													<option data-class="form-left__option" value="2">ETH 1</option>
+													<option data-class="form-left__option" value="3">ETH 2</option>
+												</select>
+												<input class="form-left__input" type="text" name="#" placeholder="0.0">
+											</form>
+											<button type="submit" class="info__top-button-swap">
+												<picture><source srcset="img/icons/swap.webp" type="image/webp"><img src="img/icons/swap.png" alt="button-swap"></picture>
+											</button>
+											<form class="info__top-form-right form-right" action="#">
+												<select name="#" data-class-modif="form-right__form">
+													<option data-class="form-right__option" value="1" selected>ETH</option>
+													<option data-class="form-right__option" value="2">ETH 1</option>
+													<option data-class="form-right__option" value="3">ETH 2</option>
+												</select>
+												<input class="form-right__input" type="text" name="#" placeholder="0.0">
+											</form>
+											<button type="submit" class="info__top-button-convert">swap</button>
+										</div>
+										<div class="info__options options-info">
+											<select name="#">
+												<option value="1" selected>advance option</option>
+												<option value="2">advance option №2</option>
+												<option value="3">advance option №3</option>
+											</select>
+										</div>
+									</div>
+									<span class="info__line-decor"></span>
+									<div class="info__inner">
+										<div class="info__settings settings">
+											<select name="#" data-class-modif="settings__form">
+												<option data-class="settings__option" value="1" selected>My Fav</option>
+												<option data-class="settings__option" value="2">My Fav №2</option>
+												<option data-class="settings__option" value="3">My Fav №3</option>
+											</select>
+											<div class="settings__item">
+												<input id="signals" class="settings__input" type="checkbox" name="signals" value="signals">
+												<label for="signals" class="settings__label"><span>Signals</span></label>
+											</div>
+											<div class="settings__item">
+												<input id="breakouts" class="settings__input" type="checkbox" name="breakouts" value="breakouts">
+												<label for="breakouts" class="settings__label"><span>Breakouts</span></label>
+											</div>
+											<div class="settings__item">
+												<input id="news" class="settings__input" type="checkbox" name="news" value="news">
+												<label for="news" class="settings__label"><span>News</span></label>
+											</div>
+										</div>
+										<div class="info__block block">
+											<div class="block__item block__item_1">
+												<div class="block__left">
+													<span class="block__subtitle">
+														Breakouts
+													</span>
+													<picture><source srcset="img/block/01.webp" type="image/webp"><img src="img/block/01.png" alt="block1"></picture>
+												</div>
+												<div class="block__decor"></div>
+												<div class="block__middle">
+													<h2 class="block__title">
+														15 min Volume <span>Breakout</span>
+													</h2>
+													<div class="block__cash">
+														<picture><source srcset="img/block/bitcoin.webp" type="image/webp"><img class="block__img" src="img/block/bitcoin.png" alt="bitcoin"></picture>
+														<p class="block__text">
+															BTC 24,000
+														</p>
+														<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="19" viewBox="0 0 23 19">
+															<image width="23" height="19" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAASCAYAAABfJS4tAAAC60lEQVQ4jaWUTU8TURSG32mntJ3Sln5QKBRTRAOSqtFEjMACWGgUQwQTwsqFC3f+Cv+AceHeyMJE2YgaFmIihJgQrARRQAVKLFRTCm3t57SdMYeckrEhJMJJbnIyc+9zz33fc68QeD2MY4ROMygUHqp4DKgegBFAFQADf8sDKACQjwqmCk0A7ABsACQAJQBJAAnKjwIuQx0AGgHUB2pPDWaUrHsttvkAQBFAVncIQNDoJ2igBq6SoK0BZ8utj6kvQ16TuwlADUsjHATW8U8zgGqGWDm3AHACIEhbi9XXu5RfH/RLjdaumvNUKSmggpODoBbWz8oGkdMyV07gkx6T43JCl7qpQLUPuHtiT9fejAPIsIFFsQJqZKCXqvJZ6tpVKK7NdDTCC8Bgv6Pa1h/MLLvvN41gIjwzHslurwKIAUhrzStXSsf2AWivN7u6/+jS/TulhPOs+3Qyk8uuh1KR+I2GruYdJVn7NjHrGPL0wi5YQrtycgXABoBtMq7cxwJLYmVDzvgkT0/WkBuW1YLU6TgnzMQXTHronG1uf1406aUPvxeEi7ZW+A3e8KOVZ6MlVfkMIMztRn2siJr2cdERfZKnQzGqtyP5mOVOQz867AH0uTowGZsVPyVXxLmtrzhh9uJazZX042/PX5RUZRFACMAOgBz7AS3Y4aiyNuuMwkBI3rLdbRyABdL2cjIEVVXVbtuFqj7nJfv73SDq9a5oXE4tlVRlHsAPAFE2rlQ2TNSYZnZa7f3B9HLTPd8gZLm4OLoxNsc3qSiJJum6t7PthL6u+DI8NZUt5Qn4vUICVQsGfyikimnjiPdqzqQYp59svJoE8IudLmSKOXHs57sJvllJPjqZleJWVDUdtt/QpE2sVnA+TKTSddO78xFeFGVIkU+m5/kyryk/OkrlLRNZlz3wYnw1yLLQZOpHqobah+aUrzjF3tN4ELCyYtqZFpMBBKCcqqSxb0hFfmgQuPw4E6T82NBm/2j2XwHgL4dSFve19qVQAAAAAElFTkSuQmCC" />
+														</svg>
+														<span class="block__percent">35%</span>
+													</div>
+												</div>
+												<div class="block__right block__right_1">
+													<span class="block__right-text">
+														87
+													</span>
+												</div>
+											</div>
+											<div class="block__item block__item_2">
+												<picture><source srcset="img/block/smile-1.webp" type="image/webp"><img class="block__smile" src="img/block/smile-1.png" alt="smile"></picture>
+												<div class="block__left">
+													<span class="block__subtitle">
+														Social Sentiment
+													</span>
+													<picture><source srcset="img/block/02.webp" type="image/webp"><img src="img/block/02.png" alt="block1"></picture>
+												</div>
+												<div class="block__decor"></div>
+												<div class="block__middle">
+													<h2 class="block__title">
+														Positive Sentiment
+													</h2>
+													<div class="block__cash">
+														<picture><source srcset="img/block/bitcoin.webp" type="image/webp"><img class="block__img" src="img/block/bitcoin.png" alt="bitcoin"></picture>
+														<p class="block__text">
+															BTC 24,000
+														</p>
+														<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="19" viewBox="0 0 23 19">
+															<image width="23" height="19" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAASCAYAAABfJS4tAAAC60lEQVQ4jaWUTU8TURSG32mntJ3Sln5QKBRTRAOSqtFEjMACWGgUQwQTwsqFC3f+Cv+AceHeyMJE2YgaFmIihJgQrARRQAVKLFRTCm3t57SdMYeckrEhJMJJbnIyc+9zz33fc68QeD2MY4ROMygUHqp4DKgegBFAFQADf8sDKACQjwqmCk0A7ABsACQAJQBJAAnKjwIuQx0AGgHUB2pPDWaUrHsttvkAQBFAVncIQNDoJ2igBq6SoK0BZ8utj6kvQ16TuwlADUsjHATW8U8zgGqGWDm3AHACIEhbi9XXu5RfH/RLjdaumvNUKSmggpODoBbWz8oGkdMyV07gkx6T43JCl7qpQLUPuHtiT9fejAPIsIFFsQJqZKCXqvJZ6tpVKK7NdDTCC8Bgv6Pa1h/MLLvvN41gIjwzHslurwKIAUhrzStXSsf2AWivN7u6/+jS/TulhPOs+3Qyk8uuh1KR+I2GruYdJVn7NjHrGPL0wi5YQrtycgXABoBtMq7cxwJLYmVDzvgkT0/WkBuW1YLU6TgnzMQXTHronG1uf1406aUPvxeEi7ZW+A3e8KOVZ6MlVfkMIMztRn2siJr2cdERfZKnQzGqtyP5mOVOQz867AH0uTowGZsVPyVXxLmtrzhh9uJazZX042/PX5RUZRFACMAOgBz7AS3Y4aiyNuuMwkBI3rLdbRyABdL2cjIEVVXVbtuFqj7nJfv73SDq9a5oXE4tlVRlHsAPAFE2rlQ2TNSYZnZa7f3B9HLTPd8gZLm4OLoxNsc3qSiJJum6t7PthL6u+DI8NZUt5Qn4vUICVQsGfyikimnjiPdqzqQYp59svJoE8IudLmSKOXHs57sJvllJPjqZleJWVDUdtt/QpE2sVnA+TKTSddO78xFeFGVIkU+m5/kyryk/OkrlLRNZlz3wYnw1yLLQZOpHqobah+aUrzjF3tN4ELCyYtqZFpMBBKCcqqSxb0hFfmgQuPw4E6T82NBm/2j2XwHgL4dSFve19qVQAAAAAElFTkSuQmCC" />
+														</svg>
+														<span class="block__percent">35%</span>
+													</div>
+												</div>
+												<div class="block__right block__right_2">
+													<span class="block__right-text">
+														48
+													</span>
+												</div>
+											</div>
+											<div class="block__item block__item_3">
+												<picture><source srcset="img/block/smile-2.webp" type="image/webp"><img class="block__smile" src="img/block/smile-2.png" alt="smile"></picture>
+												<div class="block__left">
+													<span class="block__subtitle">
+														News Sentiment
+													</span>
+													<picture><source srcset="img/block/03.webp" type="image/webp"><img src="img/block/03.png" alt="block1"></picture>
+												</div>
+												<div class="block__decor"></div>
+												<div class="block__middle">
+													<h2 class="block__title">
+														Positive Sentiment
+													</h2>
+													<div class="block__cash">
+														<picture><source srcset="img/block/bitcoin.webp" type="image/webp"><img class="block__img" src="img/block/bitcoin.png" alt="bitcoin"></picture>
+														<p class="block__text">
+															BTC 24,000
+														</p>
+														<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="19" viewBox="0 0 23 19">
+															<image width="23" height="19" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAASCAYAAABfJS4tAAAC60lEQVQ4jaWUTU8TURSG32mntJ3Sln5QKBRTRAOSqtFEjMACWGgUQwQTwsqFC3f+Cv+AceHeyMJE2YgaFmIihJgQrARRQAVKLFRTCm3t57SdMYeckrEhJMJJbnIyc+9zz33fc68QeD2MY4ROMygUHqp4DKgegBFAFQADf8sDKACQjwqmCk0A7ABsACQAJQBJAAnKjwIuQx0AGgHUB2pPDWaUrHsttvkAQBFAVncIQNDoJ2igBq6SoK0BZ8utj6kvQ16TuwlADUsjHATW8U8zgGqGWDm3AHACIEhbi9XXu5RfH/RLjdaumvNUKSmggpODoBbWz8oGkdMyV07gkx6T43JCl7qpQLUPuHtiT9fejAPIsIFFsQJqZKCXqvJZ6tpVKK7NdDTCC8Bgv6Pa1h/MLLvvN41gIjwzHslurwKIAUhrzStXSsf2AWivN7u6/+jS/TulhPOs+3Qyk8uuh1KR+I2GruYdJVn7NjHrGPL0wi5YQrtycgXABoBtMq7cxwJLYmVDzvgkT0/WkBuW1YLU6TgnzMQXTHronG1uf1406aUPvxeEi7ZW+A3e8KOVZ6MlVfkMIMztRn2siJr2cdERfZKnQzGqtyP5mOVOQz867AH0uTowGZsVPyVXxLmtrzhh9uJazZX042/PX5RUZRFACMAOgBz7AS3Y4aiyNuuMwkBI3rLdbRyABdL2cjIEVVXVbtuFqj7nJfv73SDq9a5oXE4tlVRlHsAPAFE2rlQ2TNSYZnZa7f3B9HLTPd8gZLm4OLoxNsc3qSiJJum6t7PthL6u+DI8NZUt5Qn4vUICVQsGfyikimnjiPdqzqQYp59svJoE8IudLmSKOXHs57sJvllJPjqZleJWVDUdtt/QpE2sVnA+TKTSddO78xFeFGVIkU+m5/kyryk/OkrlLRNZlz3wYnw1yLLQZOpHqobah+aUrzjF3tN4ELCyYtqZFpMBBKCcqqSxb0hFfmgQuPw4E6T82NBm/2j2XwHgL4dSFve19qVQAAAAAElFTkSuQmCC" />
+														</svg>
+														<span class="block__percent">35%</span>
+													</div>
+												</div>
+												<div class="block__right block__right_3">
+													<span class="block__right-text">
+														77
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+
+
+
+						<!--one page-->
+						<div class="content__body body-content">
+							page 2
+						</div>
+						<!--one page-->
+						<div class="content__body body-content">
+							page 3
+						</div>
+						<!--one page-->
+						<div class="content__body body-content">
+							page 4
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<p class="copyright">
+				Copyright © Ypred 2022. All Right Reserved
+			</p>
+		</footer>
+	</div>
+
+	<div id="popup1" aria-hidden="true" class="popup1">
+		<div class="popup1__wrapper">
+			<div class="popup1__content">
+				<!--<button data-close type="button" class="popup1__close">Закрыть</button>-->
+				<div class="popup1__content">
+					<div class="popup1__inner">
+						<div class="popup1__item popup1__item-left">
+							<span class="popup1__subtitle">Buy</span>
+							<form class="popup1__form-top form-top" action="#">
+								<select name="#" data-class-modif="form-top__form">
+									<option data-class="form-top__option" value="1" selected>ETH</option>
+									<option data-class="form-top__option" value="2">ETH 1</option>
+									<option data-class="form-top__option" value="3">ETH 2</option>
+								</select>
+								<input class="form-top__input" type="text" name="#" placeholder="0.0">
+							</form>
+							<div class="popup1__progress progress">
+								<span class="progress__item progress__item_1">25%</span>
+								<span class="progress__item progress__item_2">50%</span>
+								<span class="progress__item progress__item_3">75%</span>
+								<span class="progress__item progress__item_4">100%</span>
+							</div>
+							<form class="popup1__form-bottom form-bottom" action="#">
+								<select name="#" data-class-modif="form-bottom__form">
+									<option data-class="form-bottom__option" value="1" selected>ETH</option>
+									<option data-class="form-bottom__option" value="2">ETH 1</option>
+									<option data-class="form-bottom__option" value="3">ETH 2</option>
+								</select>
+								<input class="form-bottom__input" type="text" name="#" placeholder="0.0">
+							</form>
+							<div class="popup1__btn popup1__btn_buy">
+								Buy
+							</div>
+						</div>
+						<div class="popup1__item popup1__item-right">
+							<span class="popup1__subtitle">Sell</span>
+							<form class="popup1__form-top form-top" action="#">
+								<select name="#" data-class-modif="form-top__form">
+									<option data-class="form-top__option" value="1" selected>ETH</option>
+									<option data-class="form-top__option" value="2">ETH 1</option>
+									<option data-class="form-top__option" value="3">ETH 2</option>
+								</select>
+								<input class="form-top__input" type="text" name="#" placeholder="0.0">
+							</form>
+							<div class="popup1__progress progress">
+								<span class="progress__item progress__item_1">25%</span>
+								<span class="progress__item progress__item_2">50%</span>
+								<span class="progress__item progress__item_3">75%</span>
+								<span class="progress__item progress__item_4">100%</span>
+							</div>
+							<form class="popup1__form-bottom form-bottom" action="#">
+								<select name="#" data-class-modif="form-bottom__form">
+									<option data-class="form-bottom__option" value="1" selected>ETH</option>
+									<option data-class="form-bottom__option" value="2">ETH 1</option>
+									<option data-class="form-bottom__option" value="3">ETH 2</option>
+								</select>
+								<input class="form-bottom__input" type="text" name="#" placeholder="0.0">
+							</form>
+							<div class="popup1__btn popup1__btn_sell">
+								Sell
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/app.min.js?_v=20220918210221"></script>
+
+</body>
+
+</html>
